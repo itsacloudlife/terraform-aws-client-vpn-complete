@@ -58,3 +58,9 @@ variable "auth_routes" {
     "vpc_cidr"      = "true"
   }
 }
+
+variable "security_group_ids" {
+  description = "list of security groups to associate with the vpn"
+  type = list(string)
+  default = null
+}

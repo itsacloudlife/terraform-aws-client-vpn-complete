@@ -38,6 +38,7 @@ resource "aws_ec2_client_vpn_endpoint" "client_vpn" {
     Name    = "${var.stage} client vpn certificate auth"
     Managed = "managed by terraform"
   }
+  security_group_ids = var.security_group_ids
 }
 
 
